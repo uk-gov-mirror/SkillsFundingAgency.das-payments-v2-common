@@ -1,4 +1,5 @@
 ﻿using System;
+using SFA.DAS.Payments.Model.Core.Entities;
 
 namespace SFA.DAS.Payments.Model.Core
 {
@@ -21,7 +22,7 @@ namespace SFA.DAS.Payments.Model.Core
 
         public DateTime StartDate { get; set; }
 
-        public TrainingType LearningType { get; set;}
+        public LearningType LearningType { get; set; } = LearningType.Apprenticeship;
 
         public LearningAim Clone()
         {
