@@ -4,6 +4,7 @@
     {
         Apprenticeship = 1,
         FoundationApprenticeship = 2,
-        ApprenticeshipUnit = 3  
+        FunctionalSkill = 3,
+        ApprenticeshipUnit = 4
     }
 }
