@@ -7,6 +7,7 @@
     {
         Learning = 1,
         Completion = 2,
-        Balancing = 3
+        Balancing = 3,
+        Milestone1 = 17
     }
 }
