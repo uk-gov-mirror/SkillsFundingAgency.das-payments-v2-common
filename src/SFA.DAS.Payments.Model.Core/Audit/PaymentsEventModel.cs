@@ -27,6 +27,9 @@ namespace SFA.DAS.Payments.Model.Core.Audit
         decimal InstalmentAmount { get; set; }
         short NumberOfInstalments { get; set; }
         DateTime? LearningStartDate { get; set; }
+        byte? CourseType { get; set; }
+        string CourseCode { get; set; }
+        byte? LearningType { get; set; }
     }
 
     public abstract class PaymentsEventModel : IPaymentsEventModel
