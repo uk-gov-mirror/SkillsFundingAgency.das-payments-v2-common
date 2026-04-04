@@ -58,5 +58,8 @@ namespace SFA.DAS.Payments.Model.Core.Audit
         public long JobId { get; set; }
         public DateTimeOffset EventTime { get; set; }
         public long? LearningAimSequenceNumber { get; set; }
+        public byte? CourseType { get; set; }
+        public string CourseCode { get; set; }
+        public byte? LearningType { get; set; }
     }
 }
