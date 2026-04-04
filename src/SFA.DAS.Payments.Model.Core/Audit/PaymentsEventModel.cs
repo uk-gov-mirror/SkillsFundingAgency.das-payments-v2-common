@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace SFA.DAS.Payments.Model.Core.Audit
-{
+{    
     public interface IPaymentsEventModel
     {
         Guid EventId { get; set; }
