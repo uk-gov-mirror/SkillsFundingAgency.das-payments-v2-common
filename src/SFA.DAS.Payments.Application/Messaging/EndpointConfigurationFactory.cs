@@ -43,6 +43,10 @@ namespace SFA.DAS.Payments.Application.Messaging
             //builder.RegisterInstance(transport)
             //    .As<TransportExtensions<AzureServiceBusTransport>>()
             //    .SingleInstance();
+            if (config.UseWebSockets)
+            {
+                transport.UseWebSockets();
+            } 
             EndpointConfigurationEvents.OnConfiguringTransport(transport);  //TODO: find AutoFac & NSB way to do this
             endpointConfiguration.SendFailedMessagesTo(config.FailedMessagesQueue);
             endpointConfiguration.UseSerialization<NewtonsoftJsonSerializer>();

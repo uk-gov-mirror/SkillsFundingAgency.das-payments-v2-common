@@ -14,6 +14,7 @@ namespace SFA.DAS.Payments.Application.Infrastructure.Configuration
         public int ImmediateMessageRetries { get; set; }
         public int DelayedMessageRetries { get; set; }
         public TimeSpan DelayedMessageRetryDelay { get; set; }
+        public bool UseWebSockets { get; set; }
 
         //TODO: Needed somewhere to put this, will refactor if this works for the new NSB config API.
         public static IApplicationConfiguration Create(IConfigurationHelper configHelper)
@@ -34,6 +35,7 @@ namespace SFA.DAS.Payments.Application.Infrastructure.Configuration
                 ImmediateMessageRetries = configHelper.GetSettingOrDefault("ImmediateMessageRetries", 1),
                 DelayedMessageRetries = configHelper.GetSettingOrDefault("DelayedMessageRetries", 3),
                 DelayedMessageRetryDelay = delayedRetryDelay,
+                UseWebSockets = configHelper.GetSettingOrDefault("UseWebSockets","false").ToLower() == "true"
             };
         }
     }
