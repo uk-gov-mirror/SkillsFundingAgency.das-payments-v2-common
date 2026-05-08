@@ -4,7 +4,7 @@
     {
         Apprenticeship = 1,
         FoundationApprenticeship = 2,
-        FunctionalSkill = 3,
+        MathsandEnglish = 3,
         ApprenticeshipUnit = 4
     }
 }
