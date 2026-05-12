@@ -4,7 +4,7 @@
     {
         Apprenticeship = 1,
         FoundationApprenticeship = 2,
-        MathsandEnglish = 3,
+        MathsAndEnglish = 3,
         ApprenticeshipUnit = 4
     }
 
