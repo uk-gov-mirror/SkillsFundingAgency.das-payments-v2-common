@@ -34,8 +34,7 @@ namespace SFA.DAS.Payments.Application.Data.Configurations
             builder.HasMany<ApprenticeshipPauseModel>(x => x.ApprenticeshipPauses).WithOne().HasForeignKey(ap => ap.ApprenticeshipId);
             builder.Property(x => x.CourseCode).HasColumnName(@"CourseCode");
             builder.Property(x => x.LearningType).HasColumnName(@"LearningType");
-            builder.Property(x => x.CourseType).HasColumnName(@"CourseType");
-            
+            builder.Property(x => x.CourseType).HasColumnName(@"CourseType");            
         }
     }
 }
