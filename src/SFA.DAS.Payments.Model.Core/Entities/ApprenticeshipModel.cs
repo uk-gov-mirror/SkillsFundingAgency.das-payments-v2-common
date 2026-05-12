@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SFA.DAS.Payments.Model.Core.Entities
 {
-    public class ApprenticeshipModel
+    public class ApprenticeshipModel 
     {
         public long Id { get; set; }
         public long AccountId { get; set; }
