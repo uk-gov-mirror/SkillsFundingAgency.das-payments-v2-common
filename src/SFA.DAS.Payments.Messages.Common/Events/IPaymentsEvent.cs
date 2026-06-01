@@ -11,5 +11,4 @@ namespace SFA.DAS.Payments.Messages.Common.Events
         DateTime? IlrSubmissionDateTime { get; }
         CollectionPeriod CollectionPeriod { get; }
     }
-
 }
