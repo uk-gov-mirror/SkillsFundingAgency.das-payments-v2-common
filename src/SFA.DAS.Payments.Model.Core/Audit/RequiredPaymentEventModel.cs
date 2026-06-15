@@ -49,4 +49,5 @@ namespace SFA.DAS.Payments.Model.Core.Audit
         public LearningType? LearningType { get; set; }
         public string CourseCode { get; set; }
     }
+
 }
