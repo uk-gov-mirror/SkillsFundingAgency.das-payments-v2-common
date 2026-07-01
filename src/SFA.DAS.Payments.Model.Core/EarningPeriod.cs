@@ -18,5 +18,6 @@ namespace SFA.DAS.Payments.Model.Core
         public int? Priority { get; set; }
         public List<DataLockFailure> DataLockFailures { get; set; }
         public DateTime? AgreedOnDate { get; set; }
+        public bool IsPaymentPaused { get; set; }
     }
 }
