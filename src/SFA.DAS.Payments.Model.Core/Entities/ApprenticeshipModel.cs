@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SFA.DAS.Payments.Model.Core.Entities
 {
-    public class ApprenticeshipModel
+    public class ApprenticeshipModel 
     {
         public long Id { get; set; }
         public long AccountId { get; set; }
@@ -28,6 +28,9 @@ namespace SFA.DAS.Payments.Model.Core.Entities
         public List<ApprenticeshipPauseModel> ApprenticeshipPauses { get; set; }
 
         public DateTimeOffset CreationDate { get; set; }
+        public CourseType? CourseType { get; set; }
+        public LearningType? LearningType { get; set; }
+        public string CourseCode { get; set; }
         public ApprenticeshipModel()
         {
             ApprenticeshipPriceEpisodes = new List<ApprenticeshipPriceEpisodeModel>();

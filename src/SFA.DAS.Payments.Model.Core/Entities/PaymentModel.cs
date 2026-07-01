@@ -27,7 +27,7 @@ namespace SFA.DAS.Payments.Model.Core.Entities
         public ContractType ContractType { get; set; }
         public TransactionType TransactionType { get; set; }
         public FundingSourceType FundingSource { get; set; }
-        public DateTime IlrSubmissionDateTime { get; set; }
+        public DateTime? IlrSubmissionDateTime { get; set; }
         public decimal SfaContributionPercentage { get; set; }
         public long JobId { get; set; }
         public long? AccountId { get; set; }
@@ -49,6 +49,9 @@ namespace SFA.DAS.Payments.Model.Core.Entities
         public long? LearningAimSequenceNumber { get; set; }
         public byte? AgeAtStartOfLearning { get; set; }
         public FundingPlatformType? FundingPlatformType { get; set; }
+        public CourseType? CourseType { get; set; }
+        public LearningType? LearningType { get; set; }
+        public string CourseCode { get; set; }
 
         public PaymentModel Clone()
         {

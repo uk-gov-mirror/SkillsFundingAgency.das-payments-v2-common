@@ -42,7 +42,7 @@ namespace SFA.DAS.Payments.Application.Data.Configurations
             builder.Property(x => x.FundingSource).HasColumnName(@"FundingSource").IsRequired();
             builder.Property(x => x.AccountId).HasColumnName(@"AccountId");
             builder.Property(x => x.TransferSenderAccountId).HasColumnName(@"TransferSenderAccountId");
-            builder.Property(x => x.IlrSubmissionDateTime).HasColumnName(@"IlrSubmissionDateTime").IsRequired();
+            builder.Property(x => x.IlrSubmissionDateTime).HasColumnName(@"IlrSubmissionDateTime");
             builder.Property(x => x.SfaContributionPercentage).HasColumnName(@"SfaContributionPercentage").IsRequired();
             builder.Property(x => x.JobId).HasColumnName(@"JobId").IsRequired();
             builder.Property(x => x.StartDate).HasColumnName(@"EarningsStartDate").IsRequired();
@@ -61,6 +61,9 @@ namespace SFA.DAS.Payments.Application.Data.Configurations
             builder.Property(x => x.LearningAimSequenceNumber).HasColumnName(@"LearningAimSequenceNumber");
             builder.Property(x => x.AgeAtStartOfLearning).HasColumnName(@"AgeAtStartOfLearning");
             builder.Property(x => x.FundingPlatformType).HasColumnName(@"FundingPlatformType");
+            builder.Property(x => x.CourseType).HasColumnName(@"CourseType");
+            builder.Property(x => x.LearningType).HasColumnName(@"LearningType");
+            builder.Property(x => x.CourseCode).HasColumnName(@"CourseCode");
         }
     }
 }

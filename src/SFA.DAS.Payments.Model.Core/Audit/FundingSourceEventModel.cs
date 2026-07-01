@@ -40,12 +40,14 @@ namespace SFA.DAS.Payments.Model.Core.Audit
         public decimal? InstalmentAmount { get; set; }
         public short? NumberOfInstalments { get; set; }
         public string AgreementId { get; set; }
-
         public DateTime? LearningStartDate { get; set; }
         public long? ApprenticeshipId { get; set; }
         public long? ApprenticeshipPriceEpisodeId { get; set; }
         public ApprenticeshipEmployerType ApprenticeshipEmployerType { get; set; }
         public int? AgeAtStartOfLearning { get; set; }
         public FundingPlatformType FundingPlatformType { get; set; }
+        public CourseType? CourseType { get; set; }
+        public LearningType? LearningType { get; set; }
+        public string CourseCode { get; set; }
     }
 }

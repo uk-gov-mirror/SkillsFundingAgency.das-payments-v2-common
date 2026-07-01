@@ -32,7 +32,7 @@ namespace SFA.DAS.Payments.ProviderPayments.Application.Data
         public ContractType ContractType { get; set; }
         public TransactionType TransactionType { get; set; }
         public FundingSourceType FundingSource { get; set; }
-        public DateTime IlrSubmissionDateTime { get; set; }
+        public DateTime? IlrSubmissionDateTime { get; set; }
         public decimal SfaContributionPercentage { get; set; }
         public long JobId { get; set; }
         public long? AccountId { get; set; }

@@ -1,4 +1,5 @@
 ﻿using System;
+using SFA.DAS.Payments.Model.Core.Entities;
 
 namespace SFA.DAS.Payments.Model.Core
 {
@@ -10,6 +11,8 @@ namespace SFA.DAS.Payments.Model.Core
 
         public int StandardCode { get; set; }
 
+        public string CourseCode { get; set; }
+
         public int FrameworkCode { get; set; }
 
         public int PathwayCode { get; set; }
@@ -18,6 +21,8 @@ namespace SFA.DAS.Payments.Model.Core
         public long SequenceNumber { get; set; }
 
         public DateTime StartDate { get; set; }
+
+        public LearningType LearningType { get; set; } = LearningType.Apprenticeship;
 
         public LearningAim Clone()
         {

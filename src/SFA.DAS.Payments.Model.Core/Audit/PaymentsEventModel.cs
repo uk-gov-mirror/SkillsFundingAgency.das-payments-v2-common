@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace SFA.DAS.Payments.Model.Core.Audit
-{
+{    
     public interface IPaymentsEventModel
     {
         Guid EventId { get; set; }
@@ -27,6 +27,9 @@ namespace SFA.DAS.Payments.Model.Core.Audit
         decimal InstalmentAmount { get; set; }
         short NumberOfInstalments { get; set; }
         DateTime? LearningStartDate { get; set; }
+        byte? CourseType { get; set; }
+        string CourseCode { get; set; }
+        byte? LearningType { get; set; }
     }
 
     public abstract class PaymentsEventModel : IPaymentsEventModel
@@ -55,5 +58,8 @@ namespace SFA.DAS.Payments.Model.Core.Audit
         public long JobId { get; set; }
         public DateTimeOffset EventTime { get; set; }
         public long? LearningAimSequenceNumber { get; set; }
+        public byte? CourseType { get; set; }
+        public string CourseCode { get; set; }
+        public byte? LearningType { get; set; }
     }
 }
